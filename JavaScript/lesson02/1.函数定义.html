@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <script>
+
+        //定义方式一
+        function first(x) {
+            if (x>=0){
+                return x;
+            }else {
+                return -x;
+            }
+        }
+        //定义方式二
+        var first1 = function (x) {
+            //手动抛出异常来判断
+            if (typeof x!='number'){
+                throw 'not a Num'
+            }
+            if (x>=0){
+                return x;
+            }else {
+                return -x;
+            }
+        }
+
+        //arguments
+        var first1 = function (x) {
+            console.log("x=>"+x);
+
+            for (var i = 0;i<arguments.length;i++){
+                console.log(arguments[i]);
+            }
+
+            if (x>=0){
+                return x;
+            }else {
+                return -x;
+            }
+        }
+
+
+    </script>
+    
+</head>
+<body>
+
+</body>
+</html>

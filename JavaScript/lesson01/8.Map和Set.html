@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        'use strict'
+
+        //ES6Map
+        //学生的成绩，学生的名字
+        var names = ["top","bob","jack"];
+        var scores = [100,90,80];
+
+        var map = new Map([['top',100],['jack',80],['bob',90]])
+        var name = map.get('top')//通过key获得value
+        map.set('admin',123456);
+        console.log(name);
+        map.delete("top");
+
+        let set = new Set([3, 1, 1, 1, 1]);//setk可以去重
+        set.add(2);
+        set.delete(1)
+        console.log(set.has(3));
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>
